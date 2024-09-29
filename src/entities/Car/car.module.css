@@ -1,0 +1,84 @@
+
+.body {
+    max-width: 445px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.notAvailableBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px 24px;
+    background: #000;
+    white-space: nowrap;
+}
+
+.imgContainer.notAvailable img {
+    opacity: 0.7;
+}
+
+.imgContainer {
+    position: relative;
+}
+
+.imgContainer img {
+    width: 100%;
+    min-height: 310px;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid var(--gray-second);
+    object-fit: contain;
+}
+
+.carData {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.carData h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-second-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.properties {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.properties p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-second-color);
+}
+
+.properties p span {
+    margin-right: 5px;
+}
+
+.carPrice {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: auto;
+}

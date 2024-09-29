@@ -1,0 +1,73 @@
+.btn {
+    border-radius: 5px;
+    background: var(--purple-color);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn.default:active {
+    background: #240C86;
+}
+
+
+
+.btn:hover {
+    background: #3213AC;
+}
+
+
+
+.btn.withoutText {
+    justify-content: center;
+}
+
+.btn.withIcon {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* styles for type danger */
+
+.btn.danger {
+    background: transparent;
+    border: 2px solid #D73737;
+}
+
+.btn.danger:hover {
+    background: #D73737;
+}
+
+.btn.danger:active {
+    background: #B72121;
+    border-color: #B72121;
+}
+
+.btn.danger:hover path {
+    fill: #fff;
+}
+
+/* styles for type link */
+
+.btn.link {
+    background: transparent;
+    color: var(--text-main-color);
+}
+
+.btn.link:hover {
+    background: transparent;
+}
+
+
+/* styles for disabled state */
+
+.btn:disabled {
+    background: var(--gray-second);
+    color: var(--text-main-color);
+    cursor: not-allowed;
+}

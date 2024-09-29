@@ -1,0 +1,39 @@
+.header {
+    padding: 17px 0;
+    border-bottom: 1px solid var(--gray-second);
+    margin-bottom: 46px;
+}
+
+.container {
+    width: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.catalogBtn {
+    padding: 9px 26px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

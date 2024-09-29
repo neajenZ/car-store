@@ -1,0 +1,64 @@
+.body {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray-second);
+}
+
+.body.last {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img {
+    width: 443px;
+    object-fit: contain;
+    border: 1px solid var(--gray-second);
+}
+
+.carData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.carData h3 {
+    color: var(--text-main-color);
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.carData p {
+    color: var(--text-second-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+   -webkit-line-clamp: 3;
+    line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+
+.price {
+    color: var(--text-main-color);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.actions {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.chooseBtn {
+    height: 56px;
+    padding: 0 36px;
+}
