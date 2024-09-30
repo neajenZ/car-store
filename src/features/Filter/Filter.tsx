@@ -7,10 +7,9 @@ import { options_filter } from "./constants"
 
 import { IFilterType, IProps } from "./model"
 
-
 export const Filter = ({ onChange }: IProps) => {
 
-    const handleChange = (e: ChangeEvent<HTMLSelectElement> ) => {
+    const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
         const value = e.target.value as IFilterType
         onChange(value)
     }
@@ -28,5 +27,3 @@ export const Filter = ({ onChange }: IProps) => {
         </div>
     )
 }
-
-

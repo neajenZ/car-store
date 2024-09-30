@@ -12,7 +12,7 @@ import { Car, QueryCarsArgs } from '../../graphql/generated';
 
 export const Search = () => {
     const [searchValue, setSearchValue] = useState<string>('')
-    const [getCars, { called, loading, data }] = useLazyQuery<{ cars: Car[] }, QueryCarsArgs>(GET_CARS);
+    const [getCars, { loading }] = useLazyQuery<{ cars: Car[] }, QueryCarsArgs>(GET_CARS);
 
     const handleSearch = () => {
         getCars({

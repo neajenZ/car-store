@@ -9,6 +9,7 @@
     border: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
     text-indent: 1px;
     font-weight: 500;
     font-size: 16px;

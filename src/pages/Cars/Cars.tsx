@@ -12,10 +12,9 @@ import { Filter, IFilterType } from "../../features/Filter";
 
 type IResponse = { cars: Car[] }
 
-
 const Cars: FC = () => {
   const [filter, setFilter] = useState<IFilterType>('available')
-  const { loading, error, data } = useQuery<IResponse>(GET_CARS);
+  const { loading, data } = useQuery<IResponse>(GET_CARS);
   
   const preparedData = useMemo(() => {
     if (data && data.cars) {

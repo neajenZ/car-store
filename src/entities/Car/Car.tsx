@@ -1,15 +1,17 @@
-import styles from './car.module.css'
+import styles from './Сar.module.css'
+
 import { Button } from '../../shared/ui/Button/Button'
 import { AddCarToFavorites } from '../../features/AddToFavorites'
+
 import { IProps } from './model'
-
-
 
 export const CarCard = ({ data }: IProps) => {
     
     return (
         <div className={styles.body}>
-            <div className={`${styles.imgContainer} ${!data.availability ? styles.notAvailable : ''}`}>
+            <div className={`${styles.imgContainer} ${!data.availability
+? styles.notAvailable
+: ''}`}>
                 <img src={`${import.meta.env.VITE_API_URL}${data.img_src}`} alt={`${data.brand} ${data.model}`} />
                 {
                     !data.availability && <div className={styles.notAvailableBtn}>Нет в наличии</div>

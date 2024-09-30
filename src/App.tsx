@@ -1,4 +1,4 @@
-import './global.css'
+import './styles/global.css'
 
 import { FC } from "react";
 import { Route, Routes } from "react-router-dom";

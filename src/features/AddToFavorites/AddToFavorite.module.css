@@ -1,7 +1,3 @@
-/* .btn:hover svg path {
-    fill: red;
-} */
-
-.btn:disabled path {
-    fill: var(--gray-second) !important;
+.btn:disabled {
+    cursor: not-allowed;
 }

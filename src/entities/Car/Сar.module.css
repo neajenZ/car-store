@@ -1,4 +1,3 @@
-
 .body {
     max-width: 445px;
     width: 100%;
@@ -50,13 +49,13 @@
     color: var(--text-second-color);
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
     width: 100%;
+    white-space: nowrap;
 }
 
 .properties {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 14px;
 }
 

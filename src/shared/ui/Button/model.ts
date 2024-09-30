@@ -1,6 +1,4 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps, HTMLProps, ReactElement, ReactNode } from "react";
-
-
+import { ButtonHTMLAttributes, ReactElement, ReactNode } from "react";
 
 export type IProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'className'> & {
     text?: string,

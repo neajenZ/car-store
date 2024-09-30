@@ -1,7 +1,5 @@
 import { IOption } from "./model";
 
-
-
 export const options_filter: IOption[] = [
     {
         value: 'available',

@@ -4,9 +4,6 @@ import { useAppSelector } from "../../shared/hooks/reduxHooks"
 
 import { FavoriteCar } from "../../entities/FavoriteCar"
 
-
-
-
 export const FavoriteCarsList = () => {
     const { favorites } = useAppSelector(state => state.mainStore)
     

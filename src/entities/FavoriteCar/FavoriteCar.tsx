@@ -1,14 +1,16 @@
+import styles from './FavoriteCar.module.css'
+
 import { RemoveFromFavorites } from '../../features/RemoveFromFavorites'
 import { Button } from '../../shared/ui/Button/Button'
-import styles from './FavoriteCar.module.css'
+
 import { IProps } from './model'
-
-
 
 export const FavoriteCar = ({ data, isLastElement }: IProps) => {
 
     return (
-        <div className={`${styles.body} ${isLastElement ? styles.last : ''}`}>
+        <div className={`${styles.body} ${isLastElement
+? styles.last
+: ''}`}>
             <div className={styles.wrapper}>
                 <img className={styles.img} src={`${import.meta.env.VITE_API_URL}${data.img_src}`} alt="" />
 
@@ -23,7 +25,6 @@ export const FavoriteCar = ({ data, isLastElement }: IProps) => {
                         <RemoveFromFavorites carId={data.id} />
                     </div>
                 </div>
-
                 
             </div>
         </div>

@@ -6,8 +6,6 @@ import { BurgerIcon } from '../../shared/icons/BurgerIcon'
 import { FavoriteIcon } from '../../shared/icons/FavoriteIcon'
 import { Button } from '../../shared/ui/Button/Button'
 
-
-
 export const Header = () => {
     const navigate = useNavigate()
 

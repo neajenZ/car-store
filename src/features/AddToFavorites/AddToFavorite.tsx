@@ -8,7 +8,6 @@ import { addToFavorites } from "../../shared/slice/mainSlice"
 
 import { IProps } from "./model"
 
-
 export const AddCarToFavorites = ({ car }: IProps) => {
     const [isFavorite, setFavorite] = useState(false)
     const { favorites } = useAppSelector(state => state.mainStore)
@@ -17,7 +16,7 @@ export const AddCarToFavorites = ({ car }: IProps) => {
     const handleAdd = () => {
         const isDuplicate = favorites.some((i) => i.id === car.id)
         if (!isDuplicate) dispatch(addToFavorites(car))
-        
+
     }
 
     useEffect(() => {
@@ -25,10 +24,18 @@ export const AddCarToFavorites = ({ car }: IProps) => {
         if (isExistInFavorite) setFavorite(true)
         else setFavorite(false)
     }, [favorites])
-    
+
     return (
         <button disabled={!car.availability} onClick={handleAdd} className={styles.btn}>
-            <FavoriteIcon variant={isFavorite ? 'active' : 'default'} />
+            <FavoriteIcon 
+                variant={
+                    !car.availability ? 
+                        'disabled' : 
+                            isFavorite
+                                ? 'active'
+                            : 'default'
+                } 
+            />
         </button>
 
     )

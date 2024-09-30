@@ -71,3 +71,7 @@
     color: var(--text-main-color);
     cursor: not-allowed;
 }
+
+.btn:disabled:active {
+    background: var(--gray-second);
+}

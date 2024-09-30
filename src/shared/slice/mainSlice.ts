@@ -1,8 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 import { IInitialState } from "./model";
 import { Car } from "../../graphql/generated";
-
-
 
 const initialState: IInitialState = {
     favorites: []
@@ -21,7 +20,6 @@ export const MainSlice = createSlice({
 
     }
 })
-
 
 export const {
     addToFavorites, removeFromFavorites

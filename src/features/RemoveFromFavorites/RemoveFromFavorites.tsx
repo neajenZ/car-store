@@ -8,8 +8,6 @@ import { Button } from '../../shared/ui/Button/Button'
 
 import { IProps } from './model'
 
-
-
 export const RemoveFromFavorites = ({ carId }: IProps) => {
     const dispatch = useAppDispatch()
 
